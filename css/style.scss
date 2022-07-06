@@ -270,6 +270,8 @@ a {
     justify-content: space-between;
 }
 .why__content {
+    display: flex;
+    flex-direction: column;
     width: 48%;
     .subtitle {
         font-size: 16px;
@@ -345,8 +347,11 @@ a {
 @media (max-width: 470px) {
     .why__content {
         .title-why {
+            display: block;
             font-size: 26px;
+            margin: 0 auto;
             text-align: center;
+            margin-bottom: 20px;
         }
     }
     
