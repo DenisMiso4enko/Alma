@@ -328,11 +328,117 @@ a {
   .why__content .title-why {
     display: block;
     font-size: 26px;
+    line-height: 38px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
   }
 }
+/* ================= Section Quality ==================== */
+.secton-quality {
+  margin: 32px 0 32px;
+}
+
+.quality-inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.quality-inner .title {
+  max-width: 456px;
+  font-size: 38px;
+  line-height: 51px;
+  letter-spacing: 0.152px;
+  color: #02291C;
+  margin-bottom: 38px;
+}
+.quality-inner .title-quality {
+  position: relative;
+}
+.quality-inner .title-quality::before {
+  content: url(../img/Vector.svg);
+  position: absolute;
+  right: 70px;
+  bottom: -10px;
+}
+.quality-inner .text-quality {
+  max-width: 490px;
+  margin-bottom: 54px;
+}
+.quality-inner .btns-wrapper .btn {
+  background: #0C4A34;
+  border: 2px solid #0C4A34;
+  border-radius: 4px;
+  padding: 14px 18px;
+}
+.quality-inner .btns-wrapper .btn-quality {
+  color: #fff;
+  margin-right: 16px;
+}
+.quality-inner .btns-wrapper .btn--white {
+  border: 2px solid rgba(91, 88, 85, 0.3);
+  border-radius: 4px;
+  background: #fff;
+  color: #0C4A34;
+}
+
+@media (max-width: 470px) {
+  .quality-inner .title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .quality-inner .btns-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .quality-inner .btns-wrapper .btn-quality {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+/* ================= Section Photos ==================== */
+.section-photos {
+  margin: 100px 0 100px;
+}
+
+.photos-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 200px;
+}
+.photos-inner .widrow1 {
+  flex: 1 1 217px;
+}
+.photos-inner .card-photo {
+  /*  width: 100%;
+   display: grid;
+   grid-template-columns: repeat(6, 211px);
+  /*  grid-template-rows: repeat(4, 211px); */
+  /* gap: 10px;
+  grid-template-areas: 
+       "standart1 standart2 standart3 widrow1 widrow1 standart4"
+       "widrow2 widrow2 row1 widrow1 widrow1 row2"
+       "widrow2 widrow2 row1 short1 short2 row2"
+       "xxxx xxxx xxxx xxxx xxxx xxxx";
+
+
+   .standart1 {grid-area: standart1;}
+   .standart2 {grid-area: standart2;}
+   .standart3 {grid-area: standart3;}
+   .standart4 {grid-area: standart4;}
+   .widrow1 {grid-area: widrow1;}
+   .widrow2 {grid-area: widrow2;}
+   .row1 {grid-area: row1;}
+   .row2 {grid-area: row2;}
+   .short1 {grid-area: short1;
+   .short1 {grid-area: short2;} */
+}
+.photos-inner .card-photo img {
+  width: 100%;
+}
+
 .hide {
   display: none;
 }

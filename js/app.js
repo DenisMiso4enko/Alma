@@ -21,7 +21,6 @@ const accardions = document.querySelectorAll('.accardion__item')
 //console.log(accardions);
 
 const content = document.querySelectorAll('.accardion-text')
-console.log(content);
 
 for (item of accardions) {
     item.addEventListener('click', function() {
