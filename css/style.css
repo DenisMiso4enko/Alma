@@ -211,6 +211,123 @@ a {
     margin-bottom: 10px;
   }
 }
+/* ================= Section Company ==================== */
+.company-inner {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #F0EFEC;
+}
+.company-inner .company__subtitle {
+  max-width: 167px;
+  font-size: 14px;
+  line-height: 19px;
+}
+.company-inner .company__content {
+  display: flex;
+  justify-content: space-between;
+}
+.company-inner .company__content img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .company-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .company-inner .company__subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* ================= Section Why Alma ==================== */
+.section-why {
+  margin: 64px 0 64px;
+}
+
+.why-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.why__content {
+  width: 48%;
+}
+.why__content .subtitle {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #497557;
+  margin-bottom: 15px;
+}
+.why__content .title {
+  max-width: 333px;
+  font-size: 38px;
+  line-height: 51px;
+  letter-spacing: 0.152px;
+  color: #02291C;
+  margin-bottom: 20px;
+}
+.why__content .accardion__item {
+  max-width: 415px;
+  border-radius: 4px;
+  padding: 22px 24px;
+  background: #F9F9F7;
+  margin-bottom: 12px;
+  overflow: hidden;
+  height: 60px;
+  cursor: pointer;
+}
+.why__content .accardion__item.active {
+  transition: 0.3s;
+  height: 155px;
+  background: #DCE3DD;
+}
+.why__content .accardion .accardion-title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #02291C;
+  margin-bottom: 16px;
+  position: relative;
+  margin-left: 30px;
+}
+.why__content .accardion .accardion-title::before {
+  content: url(../img/sheet-icon.svg);
+  position: absolute;
+  margin-left: -30px;
+}
+.why__content .accardion .accardion-text {
+  max-width: 308px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #5B5855;
+}
+
+.why__photo {
+  width: 48%;
+}
+.why__photo img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .why__photo {
+    display: none;
+  }
+
+  .why__content {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .why__content .title-why {
+    font-size: 26px;
+    text-align: center;
+  }
+}
 .hide {
   display: none;
 }
