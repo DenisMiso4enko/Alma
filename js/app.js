@@ -41,6 +41,8 @@ content.forEach(function(item) {
     })
 })
 
-
-
+// Текущий год в футоере
+let year = new Date().getFullYear()
+let date = `• Copyright Alma, ${year}`
+document.getElementById('date').innerHTML = date
 
